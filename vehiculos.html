@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Delifactory</title>
+        <link rel="stylesheet" href="assets/css/stylesheet.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -25,51 +24,68 @@
             href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
             rel="stylesheet"
         />
-</head>
-    <h1 class="repartidor-main">VEHÍCULOS</h1> 
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">
-                <i class="fa fa-user-circle-o"></i>
-                <span class="user-item">USUARIO</span>
-            </a> </li>
-            <li><a href="repartidor.html">
-                <i class="fa fa-cart-plus"></i>
-                <span class="pedidos-item">PEDIDOS</span>
-            </a> </li>
-            <li><a href="#">
-                <i class="fa fa-car"></i>
-                <span class="vehiculo-item">VEHICULO</span>
-            </a> </li>
-            </li>
-        </ul>
-    </nav>
+    </head>
+    <h1 class="repartidor-main">VEHÍCULOS</h1>
+    <body>
+        <nav>
+            <ul id="navbar">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user-circle-o"></i>
+                        <span class="user-item">USUARIO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="repartidor.html">
+                        <i class="fa fa-cart-plus"></i>
+                        <span class="pedidos-item">PEDIDOS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-car"></i>
+                        <span class="vehiculo-item">VEHICULO</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <h2 class="datos-vehiculo">DATOS DEL VEHÍCULO</h2>
-    <h3 class="modificar-datos-vehiculo">MODIFICAR DATOS</h3>
-    <form action="#" method="post"> 
-     
- 
-        <label for="idModelo" class="modelo-vehiculo">Modelo: </label> <br> 
-        <input type="text" name="modelo" id="idModelo"><br> 
+        <div id="carta-vehiculo">
+            <h2 class="datos-vehiculo">DATOS DEL VEHÍCULO</h2>
+            <h3 class="modificar-datos-vehiculo">MODIFICAR DATOS</h3>
+            <form id="form-vehiculo" class="card" action="#" method="post">
+                <label for="idModelo" class="modelo-vehiculo">Modelo: </label>
+                <br />
+                <input type="text" name="modelo" id="idModelo" required /><br />
 
-        <label for="idAno" class="ano-vehiculo">Año: </label> <br> 
-        <input type="number" max="4" name="ano" id="idAno"><br> 
+                <label for="idAno" class="ano-vehiculo">Año: </label> <br />
+                <input
+                    type="number"
+                    max="4"
+                    name="ano"
+                    id="idAno"
+                    required
+                /><br />
 
+                <label for="idMatricula" class="matricula-vehiculo"
+                    >Matricula:
+                </label>
+                <br />
+                <input type="text" name="email" id="idEmail" required /><br />
 
-        <label for="idMatricula" class="matricula-vehiculo">Matricula: </label> <br> 
-        <input type="text" name="email" id="idEmail"><br> 
+                <label for="idColorVehiculo" class="color-vehiculo"
+                    >Color:
+                </label>
+                <br />
+                <input
+                    type="color"
+                    name="colorvehiculo"
+                    id="idColorVehiculo"
+                    required
+                /><br />
 
-
-        <label for="idColorVehiculo" class="color-vehiculo">Color: </label> <br> 
-        <input type="color" name="colorvehiculo" id="idColorVehiculo"><br> 
-
-        <input type="submit" value="Modificar datos"> 
-             
-
-
-    </form> 
-    
-</body>
+                <input class="btn" type="submit" value="Modificar datos" />
+            </form>
+        </div>
+    </body>
 </html>
