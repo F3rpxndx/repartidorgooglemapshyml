@@ -73,6 +73,7 @@ nav > ul > li {
     transform: translate(-50%);
     width: 42rem;
     height: auto;
+    box-shadow: 0 0 5rem #00000025 inset;
 }
 
 #form-vehiculo {
@@ -137,4 +138,43 @@ nav > ul > li {
 .btn:hover, button:hover
 {
     background-color: rgba(170, 255, 250, 0.8688725490196079);
+}
+
+.aceptar {
+    background-color: rgb(34, 212, 34);
+    color: white;
+}
+
+.rechazar {
+    background: rgb(218, 26, 26);
+    color: white;
+}
+
+/* repartidor html */
+
+.tabla-ordenes {
+    margin: 2rem 0 0 0;
+    overflow-x: auto;
+    padding: 1rem;
+    box-shadow: 0 0 5rem #00000025 inset;   
+    width: 75%;
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #f8f4f4;
+}
+
+table, th, td {
+    border: 2px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: hsla(333, 84%, 44%, 0.6);
+    color: #fff;
 }
