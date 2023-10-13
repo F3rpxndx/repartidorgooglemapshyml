@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 *,
 *::after,
@@ -18,7 +17,7 @@ html {
 body {
     --background-color: rgb(244, 215, 228);
     min-height: 100vh;
-    padding: 2rem;
+    padding: 2rem 0rem;
     color: hsla(333, 60%, 29%, 0.8);
     background: var(--background-color);
     text-align: center;
@@ -81,14 +80,13 @@ nav > ul > li {
     padding: 0.8rem;
 }
 
-
 #form-vehiculo > input {
     margin: 0.4rem 0.8rem 1.6rem 0.8rem;
 }
 
 #form-vehiculo > input:not(.btn) {
     border-radius: 0.5rem;
-    font-family: 'Righteous', sans-serif;
+    font-family: "Righteous", sans-serif;
     color: rgba(241, 78, 179, 0.98);
     text-align: center;
     font-size: 1rem;
@@ -97,7 +95,7 @@ nav > ul > li {
 
 #form-vehiculo > label {
     margin: 1.6rem 0.8rem 0.2rem 0.8rem;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: rgba(241, 78, 179, 0.98);
     text-transform: uppercase;
     font-size: 1rem;
@@ -111,13 +109,14 @@ nav > ul > li {
     box-shadow: 0 0 3px rgba(170, 255, 250, 0.8688725490196079) !important;
 }
 
-#form-vehiculo input:not(.btn):invalid  {
+#form-vehiculo input:not(.btn):invalid {
     border-color: rgb(203, 22, 22) !important;
     box-shadow: 0 0 3px rgb(250, 4, 4) !important;
     animation: alert 300ms !important;
 }
 
-.btn, button {
+.btn,
+button {
     border: thin solid #444;
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
@@ -135,8 +134,8 @@ nav > ul > li {
     cursor: pointer;
 }
 
-.btn:hover, button:hover
-{
+.btn:hover,
+button:hover {
     background-color: rgba(170, 255, 250, 0.8688725490196079);
 }
 
@@ -156,7 +155,7 @@ nav > ul > li {
     margin: 2rem 0 0 0;
     overflow-x: auto;
     padding: 1rem;
-    box-shadow: 0 0 5rem #00000025 inset;   
+    box-shadow: 0 0 5rem #00000025 inset;
     width: 75%;
     border-collapse: collapse;
     position: relative;
@@ -165,11 +164,14 @@ nav > ul > li {
     background-color: #f8f4f4;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 2px solid #ccc;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: center;
 }
@@ -177,4 +179,31 @@ th, td {
 th {
     background-color: hsla(333, 84%, 44%, 0.6);
     color: #fff;
+}
+
+/* pedido_aceptado.html */
+
+.carta-aceptado {
+    position: relative;
+    left: 50%; 
+    margin: 4rem 0rem;
+    padding: 1.5rem 1rem;
+    background-color: #f8f4f4;
+    border-radius: 3rem;
+    transform: translateX(-50%);
+    width: 50rem;
+    height: auto;
+    box-shadow: 0 0 5rem #00000025 inset;
+}
+
+.carta-aceptado > * {
+    margin: 1rem 0rem;
+}
+
+iframe {
+    appearance: none;
+    outline: none;
+    border-radius: 3rem;
+    border: 5px solid black;
+    box-shadow: 0 0 5rem #00000025 inset;
 }
