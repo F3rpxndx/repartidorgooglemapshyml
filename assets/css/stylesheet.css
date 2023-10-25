@@ -63,6 +63,10 @@ nav > ul > li {
     display: inline;
 }
 
+#btn-editar-datos {
+    margin-top: 2rem;
+}
+
 #carta-vehiculo {
     position: relative;
     padding: 2rem 1rem 0.5rem 1rem;
@@ -134,7 +138,7 @@ button {
     cursor: pointer;
 }
 
-.btn:hover,
+.btn:hover:not(:disabled),
 button:hover {
     background-color: rgba(170, 255, 250, 0.8688725490196079);
 }
@@ -147,6 +151,10 @@ button:hover {
 .rechazar {
     background: rgb(218, 26, 26);
     color: white;
+}
+
+#form-vehiculo input:disabled {
+    opacity: 0.6;
 }
 
 /* repartidor html */

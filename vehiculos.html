@@ -24,6 +24,7 @@
             href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
             rel="stylesheet"
         />
+        <script src="vehiculos.js"></script>
     </head>
     <h1 class="repartidor-main">VEHÍCULOS</h1>
     <body>
@@ -53,25 +54,29 @@
         <div id="carta-vehiculo">
             <h2 class="datos-vehiculo">DATOS DEL VEHÍCULO</h2>
             <h3 class="modificar-datos-vehiculo">MODIFICAR DATOS</h3>
+
+            <button id="btn-editar-datos" onclick="activarEditarVehiculo()">Editar</button>
+
             <form id="form-vehiculo" class="card" action="#" method="post">
                 <label for="idModelo" class="modelo-vehiculo">Modelo: </label>
                 <br />
-                <input type="text" name="modelo" id="idModelo" required /><br />
+                <input type="text" name="modelo" id="idModelo" required disabled/><br />
 
                 <label for="idAno" class="ano-vehiculo">Año: </label> <br />
                 <input
                     type="number"
-                    max="4"
+                    max="2023"
                     name="ano"
                     id="idAno"
                     required
+                    disabled
                 /><br />
 
                 <label for="idMatricula" class="matricula-vehiculo"
                     >Matricula:
                 </label>
                 <br />
-                <input type="text" name="email" id="idEmail" required /><br />
+                <input type="text" name="email" id="idMatricula" required disabled/><br />
 
                 <label for="idColorVehiculo" class="color-vehiculo"
                     >Color:
@@ -82,9 +87,10 @@
                     name="colorvehiculo"
                     id="idColorVehiculo"
                     required
+                    disabled
                 /><br />
 
-                <input class="btn" type="submit" value="Modificar datos" />
+                <input class="btn" id='btn-confirmar' type="submit" value="Confirmar modificación" disabled/>
             </form>
         </div>
     </body>
